@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone hunting</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>   
+    <style>
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+</head>
+<body>
+
+  <header>
+    <div class="container mx-auto py-12">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="text-[#403F3F] text-2xl font-bold ">Hot Gadgets</a>
+        </div>
+        <div class="navbar-end">
+          <button class="text-xl text-white bg-[#0D6EFD] px-10 py-4 rounded-lg font-bold cursor-pointer">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container mx-auto">
+        <div class="text-center space-y-7">
+          <h1 class="text-[#100F0F] text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+          <p class="text-[#706F6F] leading-8">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+          <button class="text-xl text-white bg-[#0D6EFD] px-10 py-4 rounded-lg font-bold cursor-pointer">Buy Now</button>
+        </div>
+        <div class="text-center py-16">
+          <img class="inline-block" src="./images/Group 48095420.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-semibold">Search your phone</h1>
+        <div class="space-y-7 pb-11">
+          <input id="serachText" type="text" placeholder="Type here" class="input input-bordered py-7 w-2/6 " />
+          <button onclick="search()" class="text-xl text-white bg-[#0D6EFD] px-10 py-4 rounded-lg font-bold cursor-pointer">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto">
+
+        <div class="text-center hidden" id="loading-spinner">
+          <span class="loading loading-spinner loading-lg"></span>
+        </div>
+        <div id="products" class="grid grid-cols-4 gap-8">
+        </div>
+
+<!-- Open the modal using ID.showModal() method -->
+        <div id="Product-details-modal"> </div>
+       
+         
+
+        <div class="text-center py-7 hidden" id="showBtn">
+          <button onclick="showAll()" class="text-xl inline-block text-white bg-[#0D6EFD] px-10 py-4 rounded-lg font-semibold cursor-pointer">Show All</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="bg-[#f3f8ff] py-[90px]">
+      <div class="container mx-auto">
+        <div class="flex justify-between py-10">
+
+          <div class="space-y-4">
+            <h1 class="text-[#100F0F] font-bold text-[45px]">Hot Gadgets</h1>
+            <p class="text-[#706F6F]">You can definitely work.</p>
+          </div>
+
+          <div>
+            <button class="text-xl inline-block text-white bg-[#0D6EFD] px-10 py-4 rounded-lg font-semibold cursor-pointer">Join Premium</button>
+          </div>
+
+        </div>
+        <hr>
+
+        <div class="text-[#403F3F] text-xl font-medium flex justify-between py-12">
+          <ul class="space-y-5">
+            <li>Product</li>
+            <li>Browse jobs</li>
+            <li>Remote jobs</li>
+            <li>Startup jobs</li>
+            <li>Company jobs</li>
+          </ul>
+          <ul class="space-y-5">
+            <li>Popular</li>
+            <li>UIUX Design</li>
+            <li>Product Design</li>
+            <li>Back-End Developer</li>
+            <li>Front-End Developer</li>
+          </ul>
+          <ul class="space-y-5">
+            <li>Resource</li>
+            <li>Faq</li>
+            <li>Support</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+          <ul class="space-y-5">
+            <li>Company</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Career Tips</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
